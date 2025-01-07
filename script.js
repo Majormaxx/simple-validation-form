@@ -6,7 +6,7 @@ document.getElementById("form").addEventListener("submit", (event)=> {
     const errorMessage = document.getElementById("display");    
 
     errorMessage.textContent = "";
-    if (username.length < 3){
+    if (username.length < 1){
         errorMessage.textContent = "username cannot be empty";
         event.preventDefault();
     }else if (firstPassword !== secondPassword){
